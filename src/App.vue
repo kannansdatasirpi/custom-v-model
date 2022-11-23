@@ -1,16 +1,21 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <!--<input type="text" v-model="name" />--><!--to bind data property to the input we use v-model-->
+  <Input v-model="name" /><!--we use v-model, custome input component to bind name property-->
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Input from './components/custome-v-model.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    Input
+  },
+  data(){
+    return{
+      name: ''
+    }
+  },
+  methods: {},
 }
 </script>
 
