@@ -12,7 +12,7 @@ export default {
   },
   data(){           // here first empty data object
     return{
-      name: ''     // then add, define data property called name initialized with empty string
+      name: ''     // then add, define data property called name, initialized with empty string
     }
   },
   methods: {},
