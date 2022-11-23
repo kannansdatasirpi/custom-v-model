@@ -1,6 +1,6 @@
 <template>
   <!--<input type="text" v-model="name" />--><!--to bind data property to the input we use v-model-->
-  <Input v-model="name" /><!--we use v-model, custome input component to bind name property-->
+  <Input v-model="name" /><!--we use v-model, to customize input component to bind name property-->
 </template>
 
 <script>
@@ -8,11 +8,11 @@ import Input from './components/custome-v-model.vue'
 export default {
   name: 'App',
   components: {
-    Input
+    Input           // added list of component
   },
-  data(){
+  data(){           // here first empty data object
     return{
-      name: ''
+      name: ''     // then add, define data property called name initialized with empty string
     }
   },
   methods: {},
